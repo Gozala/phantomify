@@ -24,7 +24,7 @@
     "phantomify": "./bin/cmd.js"
   },
   "scripts": {
-    "test": "node test/index.js",
+    "test": "node ./bin/cmd.js ./test/index.js",
     "repl": "node node_modules/repl-utils"
   },
   "licenses": [
