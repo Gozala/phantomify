@@ -1,0 +1,39 @@
+{
+  "name": "phantomify",
+  "id": "phantomify",
+  "version": "0.0.1",
+  "description": "Browserify require in a PhantomJS",
+  "keywords": [
+    "phantomify"
+  ],
+  "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
+  "homepage": "https://github.com/Gozala/phantomify",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gozala/phantomify.git",
+    "web": "https://github.com/Gozala/phantomify"
+  },
+  "bugs": {
+    "url": "http://github.com/Gozala/phantomify/issues/"
+  },
+  "devDependencies": {
+    "test": "~0.5.0"
+  },
+  "main": "./phantomify.js",
+  "bin": {
+    "phantomify": "./bin/cmd.js"
+  },
+  "scripts": {
+    "test": "node test/index.js",
+    "repl": "node node_modules/repl-utils"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Gozala/phantomify/License.md"
+    }
+  ],
+  "dependencies": {
+    "browserify": "~1.16.1"
+  }
+}
