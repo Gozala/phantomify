@@ -143,7 +143,7 @@ function phantomify(main) {
   bundle.addEntry(main)
   var source = bundle.bundle()
   var directory = path.dirname(main)
-  var file = path.join(directory, "./.phantomify-" + Date.now() + ".js")
+  var file = path.join(directory, "./.phantomify.js")
   var bootstrap = path.join(path.dirname(module.filename),
                             "phantom-bootstrap.js")
 
