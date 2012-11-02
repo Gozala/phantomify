@@ -1,7 +1,7 @@
 {
   "name": "phantomify",
   "id": "phantomify",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Browserify require in a PhantomJS",
   "keywords": [
     "phantomify"
