@@ -24,8 +24,7 @@ page.onClosing = function(closingPage) {
   var code = closingPage.url.split("#")[1]
   phantom.exit(code && parseInt(code))
 }
-page.open("about:blank", function onPage(status) {
-  console.log(system.args[1])
+page.open(system.args[2] || "about:blank", function onPage(status) {
   var source = fs.read(system.args[1])
   page.evaluateAsync(Function(source))
 })

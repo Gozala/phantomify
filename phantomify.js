@@ -149,7 +149,8 @@ function phantomify(main) {
 
   if (bundle.ok) {
     fs.writeFileSync(file, source)
-    var phantomjs = spawn("phantomjs", [ bootstrap, file ], {
+    var args = [ bootstrap, file ].concat(process.argv.slice(3))
+    var phantomjs = spawn("phantomjs", args, {
       stdio: "inherit"
     })
     phantomjs.once("exit", function(code) {

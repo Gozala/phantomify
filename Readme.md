@@ -13,10 +13,18 @@ let you run node module in a headless browser environment.
 
 ## Usage
 
-    phantomify ./path/to/index.js
+    phantomify ./path/to/module.js
 
 [Phantomify][] will make a browserify bundle for the given module path
-and then will load & execute it in an empty HTML page in a [PhantomJS][].
+and then will load & execute it in an empty "about:blank" page in a
+[PhantomJS][].
+
+
+Sometimes "about:blank" is just not good enough there for [Phantomify][]
+can be given second argument for the page URL where code should be executed:
+
+    phantomify ./path/to/module.js http://localhost:8080/
+
 
 ## Install
 
