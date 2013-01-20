@@ -1,7 +1,7 @@
 {
   "name": "phantomify",
   "id": "phantomify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Browserify require in a PhantomJS",
   "keywords": [
     "phantomify"
@@ -34,6 +34,6 @@
     }
   ],
   "dependencies": {
-    "browserify": "~1.16.1"
+    "browserify": "~1.17.x"
   }
 }
